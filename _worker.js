@@ -659,8 +659,8 @@ async function handleUDPOutBound(webSocket, vlessResponseHeader, log) {
  * @returns {string}
  */
 function getVLESSConfig(userID, hostName) {
-	const wvlessws = `vless://${userID}\u0040www.visa.com.sg:8880?encryption=none&security=none&type=ws&host=${hostName}&path=%2F%3Fed%3D2048#${hostName}`;
-	const pvlesswstls = `vless://${userID}\u0040www.visa.com.sg:8443?encryption=none&security=tls&type=ws&host=${hostName}&sni=${hostName}&fp=random&path=%2F%3Fed%3D2048#${hostName}`;
+	const wvlessws = `vless://${userID}\u0040zula.ir:8880?encryption=none&security=none&type=ws&host=${hostName}&path=%2F%3Fed%3D2560#${hostName}`;
+	const pvlesswstls = `vless://${userID}\u0040zula.ir:2053?encryption=none&security=tls&type=ws&host=${hostName}&sni=${hostName}&fp=randomized&path=%2F%3Fed%3D2560#${hostName}`;
   if (hostName.includes('pages.dev')) {
     return `
 ==========================配置详解==============================
@@ -680,7 +680,7 @@ ${pvlesswstls}
 用户ID(uuid)：${userID}
 传输协议(network)：ws 或者 websocket
 伪装域名(host)：${hostName}
-路径(path)：/?ed=2048
+路径(path)：/?ed=2560
 传输安全(TLS)：开启
 跳过证书验证(allowlnsecure)：false
 ################################################################
@@ -704,7 +704,7 @@ ${wvlessws}
 用户ID(uuid)：${userID}
 传输协议(network)：ws 或者 websocket
 伪装域名(host)：${hostName}
-路径(path)：/?ed=2048
+路径(path)：/?ed=2560
 ################################################################
 
 
@@ -737,7 +737,7 @@ ${wvlessws}
 用户ID(uuid)：${userID}
 传输协议(network)：ws 或者 websocket
 伪装域名(host)：${hostName}
-路径(path)：/?ed=2048
+路径(path)：/?ed=2560
 ################################################################
 
 ################################################################
@@ -754,7 +754,7 @@ ${pvlesswstls}
 用户ID(uuid)：${userID}
 传输协议(network)：ws 或者 websocket
 伪装域名(host)：${hostName}
-路径(path)：/?ed=2048
+路径(path)：/?ed=2560
 传输安全(TLS)：开启
 跳过证书验证(allowlnsecure)：false
 ################################################################
