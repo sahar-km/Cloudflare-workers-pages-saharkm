@@ -22,33 +22,22 @@ let addresses = [
 // 设置优选地址api接口
 let addressesapi = [
 	'https://raw.githubusercontent.com/sahar-km/cmliu-WorkerVless2sub/main/addressesapi.txt', //可参考内容格式 自行搭建。
-	//'https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressesipv6api.txt', //IPv6优选内容格式 自行搭建。
+
 ];
 
 // 设置优选地址，不带端口号默认80，noTLS订阅生成
 let addressesnotls = [
-	"www.visa.com.sg:2082#sahar 1",
 	"zula.ir:2087#sahar 2",
-	"ilovepdf.com:2052#sahar 3",
-	"zula.ir:2095#sahar 4",
-	"go.inmobi.com:80#sahar 5",
-	"creativecommons.org:80#sahar 6",
-	"discord.com:8080#sahar 7",
-	"icook.hk.org:8080#sahar 8",
-	"singapore.com:2086#sahar 9",
-	"time.is:2086#sahar 10",
-	"go.inmobi.com:8880#sahar 11",
-	"creativecommons.org:8880#sahar 12",
 ];
 
 // 设置优选noTLS地址api接口
 let addressesnotlsapi = [
-	'https://raw.githubusercontent.com/sahar-km/cmliu-WorkerVless2sub/main/ntlsaddressesapi.txt', //可参考内容格式 自行搭建。
+	'https://raw.githubusercontent.com/sahar-km/cmliu-WorkerVless2sub/main/ntlsaddressesapi.txt',
 ];
 
 let DLS = 8;//速度下限
 let addressescsv = [
-	//'https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressescsv.csv', //iptest测速结果文件。
+	//
 ];
 
 let subconverter = "apiurl.v1.mk"; //在线订阅转换后端，目前使用肥羊的订阅转换功能。支持自建psub 可自行搭建https://github.com/bulianglin/psub
@@ -67,11 +56,11 @@ let CMproxyIPs = [
 ];
 let BotToken ='';
 let ChatID =''; 
-let proxyhosts = [//本地代理域名池
-	//'ppfv2tl9veojd-maillazy.pages.dev',
+let proxyhosts = [
+	//
 ];
-let proxyhostsURL = 'host';//在线代理域名池URL
-let EndPS = 'pool';//节点名备注内容
+let proxyhostsURL = '';
+let EndPS = '';
 
 let FileName = 'saharTOsub';
 let SUBUpdateTime = 6; 
