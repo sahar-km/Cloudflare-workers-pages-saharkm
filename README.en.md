@@ -1,6 +1,6 @@
 # Preferred subscription generator WorkerVless2sub
 
-### This is a VLESS node subscription content generator built through Cloudflare Workers that automatically generates preferred routes.[\[Implementation principle\]](https://www.youtube.com/watch?v=p-KhFJAC4WQ&t=70s)
+### 这个是一个通过 Cloudflare Workers 搭建，自动生成优选线路 VLESS 节点订阅内容生成器 [\[Implementation principle\]](https://www.youtube.com/watch?v=p-KhFJAC4WQ&t=70s)
 
 Telegram communication group:[@CMLiussss](https://t.me/CMLiussss)
 
@@ -42,7 +42,7 @@ For example, the domain name of your pages project is:`sub.fuck.cloudns.biz`；
 <details>
 <summary><code><strong>「 我不是小白！我有IP库！我知道IPtest是什么！我也有csv测速文件！ 」</strong></code></summary>
 
--   Add variables`ADDCSV`for**iptest speed test result csv file address**URL. For example:
+-   Add variables`ADDCSV`for**iptest测速结果csv文件地址**URL. For example:
     ```js
     https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressescsv.csv
     ```
@@ -84,7 +84,7 @@ For example, the domain name of your workers project is:`sub.cmliussss.workers.d
     ```
     This method only recommends adding preferred domain names, and the preferred domain names that change frequently are recommended through`addressesapi`to fulfill.
 
-**3.2 Example of modifying addressesapi parameters**
+ **3.2 Example of modifying addressesapi parameters**
 
 -   Revise`addressesapi`Parameters, set in the script`addressesapi`The variable is**Preferred IP address txt file**URL. For example:
     ```js
@@ -167,7 +167,7 @@ For example, the domain name of your workers project is:`sub.cmliussss.workers.d
 | NOTLS         | false                                                                                                                                                          | Change to`true`, no domain name judgment will be performed and noTLS node will always be returned.                                           |
 | TGTOKEN       | 6894123456:XXXXXXXXXX0qExVsBPUhHDAbXXXXXqWXgBA                                                                                                                 | Robot token for sending TG notifications                                                                                                     |
 | YOU DO        | 6946912345                                                                                                                                                     | Account digital ID to receive TG notifications                                                                                               |
-| subapi        | api.v1.mk                                                                                                                                                      | clash, singbox, etc. subscription conversion backend                                                                                         |
+| SUBAPI        | api.v1.mk                                                                                                                                                      | clash、singbox等 订阅转换后端                                                                                                                        |
 | SUBCONFIG     | [https://raw.github.../ACL4SSR_Online_Full_MultiMode.ini](https://raw.githubusercontent.com/cmliu/ACL4SSR/main/Clash/config/ACL4SSR_Online_Full_MultiMode.ini) | clash, singbox, etc. Subscription conversion profile                                                                                         |
 | SUBNAME       | WorkerVless2sub                                                                                                                                                | Subscription generator name                                                                                                                  |
 | PS            | 【Please do not measure speed】                                                                                                                                  | Node name remark message                                                                                                                     |
