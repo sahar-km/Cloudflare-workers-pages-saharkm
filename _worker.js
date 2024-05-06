@@ -5,7 +5,7 @@ let mytoken= ['auto'];//快速订阅访问入口, 留空则不启动快速订阅
 
 // 设置优选地址，不带端口号默认443，TLS订阅生成
 let addresses = [
-	'www.visa.com.sg:2087#sahar 1",
+	"www.visa.com.sg:2087#sahar 1",
 	"zula.ir:2087#sahar 2",
 	"ilovepdf.com:2096#sahar 3",
 	"zula.ir:2096#sahar 4",
@@ -16,7 +16,7 @@ let addresses = [
 	"singapore.com:2087#sahar 9",
 	"time.is:2087#sahar 10",
 	"go.inmobi.com:2096#sahar 11",
-	"creativecommons.org:2096#sahar 12',
+	"creativecommons.org:2096#sahar 12",
 ];
 
 // 设置优选地址api接口
@@ -38,7 +38,7 @@ let addressesnotls = [
 	"singapore.com:2087#sahar 9",
 	"time.is:2087#sahar 10",
 	"go.inmobi.com:2096#sahar 11",
-	"creativecommons.org:2096#sahar 12',
+	"creativecommons.org:2096#sahar 12",
 ];
 
 // 设置优选noTLS地址api接口
