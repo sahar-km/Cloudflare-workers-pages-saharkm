@@ -1,6 +1,6 @@
 # مولد اشتراک ترجیحی WorkerVless2sub
 
-### این یک تولید کننده محتوای اشتراک گره VLESS است که از طریق Cloudflare Workers ساخته شده است که به طور خودکار مسیرهای ترجیحی را ایجاد می کند.[\[اصل اجرا\]](https://www.youtube.com/watch?v=p-KhFJAC4WQ&t=70s)
+### این یک تولید کننده محتوای اشتراک گره VLESS است که از طریق Cloudflare Workers ساخته شده است که به طور خودکار خطوط ترجیحی را تولید می کند.[\[اصل اجرا\]](https://www.youtube.com/watch?v=p-KhFJAC4WQ&t=70s)
 
 گروه ارتباطی تلگرام:[@CMLiussss](https://t.me/CMLiussss)
 
@@ -29,7 +29,7 @@
 
 ### 4. مسیر دلخواه خود را اضافه کنید:
 
--   متغیرها را اضافه کنید`ADD`/`ADDNOTLS`خط ترجیحی استاتیک محلی، اگر شماره پورت وجود نداشته باشد، درگاه پیش‌فرض برای TLS 443 است / پورت پیش‌فرض برای noTLS 80 است و عدد # با نام مستعار یادآور دنبال می‌شود، برای مثال:
+-   متغیرها را اضافه کنید`ADD`/`ADDNOTLS`خط ترجیحی استاتیک محلی، اگر شماره پورت وجود نداشته باشد، درگاه پیش‌فرض برای TLS 443 است / پورت پیش‌فرض برای noTLS 80 است و شماره # با نام مستعار یادآور دنبال می‌شود، برای مثال:
         icook.tw:2053#优选域名
         cloudflare.cfgo.cc#优选官方线路
 
@@ -93,7 +93,7 @@
     	'https://addressesapi.090227.xyz/CloudFlareYes',
     ];
     ```
-    قابل ارجاع است[addressesapi.txt](https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressesapi.txt)قالب محتوا توسط خودتان ساخته شده است.
+    可参考 [addressesapi.txt](https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressesapi.txt)قالب محتوا توسط خودتان ساخته شده است.
 
 <details>
 <summary><code><strong>「 我不是小白！我有IP库！我知道IPtest是什么！我也有csv测速文件！ 」</strong></code></summary>
@@ -139,7 +139,7 @@
 
 ### 3. فایل های پیکربندی clash و singbox را مشخص کنید
 
--   اضافه کردن به`format=clash`مقدار کلید، پیکربندی اشتراک clash را دریافت کنید، به عنوان مثال:
+-   اضافه کردن به`format=clash`مقدار کلید، پیکربندی اشتراک clash را دریافت کنید، برای مثال:
     ```url
     https://sub.cmliussss.workers.dev/auto?format=clash
     https://sub.cmliussss.workers.dev/sub?format=clash&host=edgetunnel-2z2.pages.dev&uuid=30e9c5c8-ed28-4cd9-b008-dc67277f8b02&path=/?ed=2048
