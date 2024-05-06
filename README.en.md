@@ -46,7 +46,7 @@ For example, the domain name of your pages project is:`sub.fuck.cloudns.biz`；
     ```js
     https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressescsv.csv
     ```
--   Add variables`DLS`,means`ADDCSV`IPs that meet the minimum speed requirements and do not meet the modified value will not be added to the preferred subscription content. Note: The unit is not considered, only the numerical value. Please refer to your speed test results. For example:
+-   Add variables`DLS`,means`ADDCSV`IPs that meet the minimum speed requirements and do not meet the modified value will not be added to the preferred subscription content. Note: The unit is not considered, only the numerical value is considered. Please refer to your speed test results. For example:
 
     ```js
     8
@@ -74,7 +74,7 @@ For example, the domain name of your workers project is:`sub.cmliussss.workers.d
 
 **3.1 Example of modifying addresses parameter**
 
--   Revise`addresses`Parameters add a local static preferred line. If there is no port number, the default is 443. Generating non-TLS subscriptions is not supported. The # number is followed by a comment alias, for example:
+-   Revise`addresses`Parameters add a local static preferred line. If there is no port number, the default is 443. Generating non-TLS subscriptions is not supported. The # number is followed by a remark alias, for example:
     ```js
     let addresses = [
     	'icook.tw:2053#优选域名',
@@ -82,7 +82,7 @@ For example, the domain name of your workers project is:`sub.cmliussss.workers.d
     	'185.221.160.203:443#电信优选IP',
     ];
     ```
-    This method only recommends adding preferred domain names, and the preferred domain names that change frequently are recommended through`addressesapi`to fulfill.
+    This method only recommends adding preferred domain names. Preferred domain names that change frequently are recommended through`addressesapi`to fulfill.
 
 **3.2 Example of modifying addressesapi parameters**
 
@@ -110,7 +110,7 @@ For example, the domain name of your workers project is:`sub.cmliussss.workers.d
     ];
     ```
 
-    `DLS`IPs that do not meet the minimum speed requirements will not be added to the preferred subscription content. Note: The unit is not considered, only the numerical value. Please refer to your speed test results.
+    `DLS`IPs that do not meet the minimum speed requirements will not be added to the preferred subscription content. Note: The unit is not considered, only the numerical value is considered. Please refer to your speed test results.
 
     </details>
 
@@ -168,7 +168,7 @@ For example, the domain name of your workers project is:`sub.cmliussss.workers.d
 | TGTOKEN       | 6894123456:XXXXXXXXXX0qExVsBPUhHDAbXXXXXqWXgBA                                                                                                                 | Robot token for sending TG notifications                                                                                                     |
 | YOU DO        | 6946912345                                                                                                                                                     | Account digital ID to receive TG notifications                                                                                               |
 | subapi        | api.v1.mk                                                                                                                                                      | clash, singbox, etc. subscription conversion backend                                                                                         |
-| SUBCONFIG     | [https://raw.github.../ACL4SSR_Online_Full_MultiMode.ini](https://raw.githubusercontent.com/cmliu/ACL4SSR/main/Clash/config/ACL4SSR_Online_Full_MultiMode.ini) | clash, singbox, etc. Subscription conversion profile                                                                                         |
+| SUBCONFIG     | [https://raw.github.../ACL4SSR_Online_Full_MultiMode.ini](https://raw.githubusercontent.com/cmliu/ACL4SSR/main/Clash/config/ACL4SSR_Online_Full_MultiMode.ini) | clash, singbox, etc. Subscription conversion profiles                                                                                        |
 | SUBNAME       | WorkerVless2sub                                                                                                                                                | Subscription generator name                                                                                                                  |
 | PS            | 【Please do not measure speed】                                                                                                                                  | Node name remark message                                                                                                                     |
 
