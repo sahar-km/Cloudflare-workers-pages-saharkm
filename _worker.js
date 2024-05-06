@@ -308,7 +308,7 @@ export default {
 				if (host == "null" && uuid == "null") 空字段 = "HOST/UUID";
 				else if (host == "null") 空字段 = "HOST";
 				else if (uuid == "null") 空字段 = "UUID";
-				EndPS += ` 订阅器内置节点 ${空字段} 未设置！！！`;
+				EndPS += ` ${空字段} `;
 			}
 
 			const hasSos = url.searchParams.has('sos');
@@ -446,7 +446,7 @@ export default {
 				});
 			}
 		} else {
-			if(host.includes('workers.dev') || host.includes('pages.dev')) {
+			if(host.includes('niworkers.dev') || host.includes('nipages.dev')) {
 				if (proxyhostsURL) {
 					try {
 						const response = await fetch(proxyhostsURL); 
@@ -609,7 +609,7 @@ export default {
 				let 伪装域名 = host ;
 				let 最终路径 = path ;
 				let 节点备注 = EndPS ;
-				if(proxyhosts && (host.includes('.workers.dev') || host.includes('pages.dev'))) {
+				if(proxyhosts && (host.includes('.niworkers.dev') || host.includes('nipages.dev'))) {
 					最终路径 = `${path}`;
 					伪装域名 = `${host}`;
 					节点备注 = `${EndPS} RE`;
