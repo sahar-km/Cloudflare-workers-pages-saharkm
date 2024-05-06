@@ -1,6 +1,6 @@
 # Preferred subscription generator WorkerVless2sub
 
-### 这个是一个通过 Cloudflare Workers 搭建，自动生成优选线路 VLESS 节点订阅内容生成器 [\[Implementation principle\]](https://www.youtube.com/watch?v=p-KhFJAC4WQ&t=70s)
+### This is a VLESS node subscription content generator built through Cloudflare Workers that automatically generates preferred routes.[\[Implementation principle\]](https://www.youtube.com/watch?v=p-KhFJAC4WQ&t=70s)
 
 Telegram communication group:[@CMLiussss](https://t.me/CMLiussss)
 
@@ -16,7 +16,7 @@ Telegram communication group:[@CMLiussss](https://t.me/CMLiussss)
 -   In the Pages console`自定义域`tab, click below`设置自定义域`。
 -   Fill in your custom secondary domain name, be careful not to use your root domain name, for example:
     The domain name you are assigned is`fuck.cloudns.biz`, then add a custom field to fill in`sub.fuck.cloudns.biz`That’s it;
--   According to Cloudflare's requirements, your domain name DNS service provider will be returned and the custom domain will be added.`sub`CNAME record of`WorkerVless2sub.pages.dev`After that, click`激活域`That’s it.
+-   According to Cloudflare's requirements, your domain name DNS service provider will be returned and the custom domain will be added.`sub`CNAME record of`WorkerVless2sub.pages.dev`After that, click`激活域`即可。
 
 ### 3. Modify the quick subscription entrance and add built-in Vless node information:
 
@@ -42,7 +42,7 @@ For example, the domain name of your pages project is:`sub.fuck.cloudns.biz`；
 <details>
 <summary><code><strong>「 我不是小白！我有IP库！我知道IPtest是什么！我也有csv测速文件！ 」</strong></code></summary>
 
--   Add variables`ADDCSV`for**iptest测速结果csv文件地址**URL. For example:
+-   Add variables`ADDCSV`for**iptest speed test result csv file address**URL. For example:
     ```js
     https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressescsv.csv
     ```
@@ -84,7 +84,7 @@ For example, the domain name of your workers project is:`sub.cmliussss.workers.d
     ```
     This method only recommends adding preferred domain names, and the preferred domain names that change frequently are recommended through`addressesapi`to fulfill.
 
- **3.2 Example of modifying addressesapi parameters**
+**3.2 Example of modifying addressesapi parameters**
 
 -   Revise`addressesapi`Parameters, set in the script`addressesapi`The variable is**Preferred IP address txt file**URL. For example:
     ```js
@@ -167,7 +167,7 @@ For example, the domain name of your workers project is:`sub.cmliussss.workers.d
 | NOTLS         | false                                                                                                                                                          | Change to`true`, no domain name judgment will be performed and noTLS node will always be returned.                                           |
 | TGTOKEN       | 6894123456:XXXXXXXXXX0qExVsBPUhHDAbXXXXXqWXgBA                                                                                                                 | Robot token for sending TG notifications                                                                                                     |
 | YOU DO        | 6946912345                                                                                                                                                     | Account digital ID to receive TG notifications                                                                                               |
-| SUBAPI        | api.v1.mk                                                                                                                                                      | clash、singbox等 订阅转换后端                                                                                                                        |
+| subapi        | api.v1.mk                                                                                                                                                      | clash, singbox, etc. subscription conversion backend                                                                                         |
 | SUBCONFIG     | [https://raw.github.../ACL4SSR_Online_Full_MultiMode.ini](https://raw.githubusercontent.com/cmliu/ACL4SSR/main/Clash/config/ACL4SSR_Online_Full_MultiMode.ini) | clash, singbox, etc. Subscription conversion profile                                                                                         |
 | SUBNAME       | WorkerVless2sub                                                                                                                                                | Subscription generator name                                                                                                                  |
 | PS            | 【Please do not measure speed】                                                                                                                                  | Node name remark message                                                                                                                     |
