@@ -54,7 +54,7 @@
 
     </details>
 
-# روش استقرار کارگران[آموزش تصویری](https://youtu.be/AtCF7eq0hcE)
+# Workers 部署方法 [آموزش تصویری](https://youtu.be/AtCF7eq0hcE)
 
 ### 1. استقرار Cloudflare Worker:
 
