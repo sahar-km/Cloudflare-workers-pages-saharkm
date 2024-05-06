@@ -1,6 +1,6 @@
 # Preferred subscription generator WorkerVless2sub
 
-### This is a VLESS node subscription content generator built through Cloudflare Workers that automatically generates preferred lines.[\[Implementation principle\]](https://www.youtube.com/watch?v=p-KhFJAC4WQ&t=70s)
+### This is a VLESS node subscription content generator built through Cloudflare Workers that automatically generates preferred routes.[\[Implementation principle\]](https://www.youtube.com/watch?v=p-KhFJAC4WQ&t=70s)
 
 Telegram communication group:[@CMLiussss](https://t.me/CMLiussss)
 
@@ -15,7 +15,7 @@ Telegram communication group:[@CMLiussss](https://t.me/CMLiussss)
 
 -   In the Pages console`自定义域`tab, click below`设置自定义域`。
 -   Fill in your custom secondary domain name, be careful not to use your root domain name, for example:
-    The domain name you are assigned is`fuck.cloudns.biz`, then add a custom field to fill in`sub.fuck.cloudns.biz`即可；
+    The domain name you are assigned is`fuck.cloudns.biz`, then add a custom field to fill in`sub.fuck.cloudns.biz`That’s it;
 -   According to Cloudflare's requirements, your domain name DNS service provider will be returned and the custom domain will be added.`sub`CNAME record of`WorkerVless2sub.pages.dev`After that, click`激活域`That’s it.
 
 ### 3. Modify the quick subscription entrance and add built-in Vless node information:
@@ -46,7 +46,7 @@ For example, the domain name of your pages project is:`sub.fuck.cloudns.biz`；
     ```js
     https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressescsv.csv
     ```
--   Add variables`DLS`,means`ADDCSV`IPs that meet the minimum speed requirements and do not meet the modified value will not be added to the preferred subscription content. Note: The unit is not considered, only the numerical value is considered. Please refer to your speed test results. For example:
+-   Add variables`DLS`,means`ADDCSV`IPs that meet the minimum speed requirements and do not meet the modified value will not be added to the preferred subscription content. Note: The unit is not considered, only the numerical value. Please refer to your speed test results. For example:
 
     ```js
     8
@@ -82,7 +82,7 @@ For example, the domain name of your workers project is:`sub.cmliussss.workers.d
     	'185.221.160.203:443#电信优选IP',
     ];
     ```
-    This method only recommends adding preferred domain names. Preferred domain names that change frequently are recommended through`addressesapi`to fulfill.
+    This method only recommends adding preferred domain names, and the preferred domain names that change frequently are recommended through`addressesapi`to fulfill.
 
 **3.2 Example of modifying addressesapi parameters**
 
@@ -110,7 +110,7 @@ For example, the domain name of your workers project is:`sub.cmliussss.workers.d
     ];
     ```
 
-    `DLS`IPs that do not meet the minimum speed requirements will not be added to the preferred subscription content. Note: The unit is not considered, only the numerical value is considered. Please refer to your speed test results.
+    `DLS`IPs that do not meet the minimum speed requirements will not be added to the preferred subscription content. Note: The unit is not considered, only the numerical value. Please refer to your speed test results.
 
     </details>
 
@@ -127,7 +127,7 @@ For example, the domain name of your workers project is:`sub.cmliussss.workers.d
 
 ### 2. Custom subscription
 
--   **自定义订阅格式**`https://[你的Workers域名]/sub?host=[你的Vless域名]&uuid=[你的UUID]&path=[你的ws路径]`
+-   **Custom subscription format**`https://[你的Workers域名]/sub?host=[你的Vless域名]&uuid=[你的UUID]&path=[你的ws路径]`
 -   **host**: Your VLESS disguised domain name, e.g.`edgetunnel-2z2.pages.dev`；
 -   **uuid**: your VLESS client UUID, e.g.`30e9c5c8-ed28-4cd9-b008-dc67277f8b02`；
 -   **path**(optional): WS path of your VLESS (leave blank if none), e.g.`/?ed=2048`。
