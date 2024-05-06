@@ -5,19 +5,29 @@ let mytoken= ['auto'];//快速订阅访问入口, 留空则不启动快速订阅
 
 // 设置优选地址，不带端口号默认443，TLS订阅生成
 let addresses = [
-	'icook.tw:2053#官方优选域名',
-	'cloudflare.cfgo.cc#优选官方线路',
+	'www.visa.com.sg:2087#sahar 1",
+	"zula.ir:2087#sahar 2",
+	"ilovepdf.com:2096#sahar 3",
+	"zula.ir:2096#sahar 4",
+	"go.inmobi.com#sahar 5",
+	"creativecommons.org#sahar 6",
+	"discord.com:8443#sahar 7",
+	"icook.hk.org:8443#sahar 8",
+	"singapore.com:2087#sahar 9",
+	"time.is:2087#sahar 10",
+	"go.inmobi.com:2096#sahar 11",
+	"creativecommons.org:2096#sahar 12',
 ];
 
 // 设置优选地址api接口
 let addressesapi = [
-	'https://raw.githubusercontent.com/NiREvil/CFW-BOT/main/ips.txt', //可参考内容格式 自行搭建。
+	'https://raw.githubusercontent.com/sahar-km/cmliu-WorkerVless2sub/main/addressesapi.txt', //可参考内容格式 自行搭建。
 	//'https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressesipv6api.txt', //IPv6优选内容格式 自行搭建。
 ];
 
 // 设置优选地址，不带端口号默认80，noTLS订阅生成
 let addressesnotls = [
-	'www.visa.com.sg:2087#sahar 1",
+	"www.visa.com.sg:2087#sahar 1",
 	"zula.ir:2087#sahar 2",
 	"ilovepdf.com:2096#sahar 3",
 	"zula.ir:2096#sahar 4",
