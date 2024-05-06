@@ -93,7 +93,7 @@
     	'https://addressesapi.090227.xyz/CloudFlareYes',
     ];
     ```
-    可参考 [addressesapi.txt](https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressesapi.txt)قالب محتوا توسط خودتان ساخته شده است.
+    قابل ارجاع است[addressesapi.txt](https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressesapi.txt)قالب محتوا توسط خودتان ساخته شده است.
 
 <details>
 <summary><code><strong>「 我不是小白！我有IP库！我知道IPtest是什么！我也有csv测速文件！ 」</strong></code></summary>
