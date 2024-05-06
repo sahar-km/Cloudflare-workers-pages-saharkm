@@ -6,9 +6,9 @@ let mytoken= ['auto'];//快速订阅访问入口, 留空则不启动快速订阅
 // 设置优选地址，不带端口号默认443，TLS订阅生成
 let addresses = [
 	"www.visa.com.sg:2087#sahar 1",
-	"zula.ir:2087#sahar 2",
+	"zula.ir:20853#sahar 2",
 	"ilovepdf.com:2096#sahar 3",
-	"zula.ir:2096#sahar 4",
+	"zula.ir:2083#sahar 4",
 	"go.inmobi.com#sahar 5",
 	"creativecommons.org#sahar 6",
 	"discord.com:8443#sahar 7",
@@ -27,23 +27,23 @@ let addressesapi = [
 
 // 设置优选地址，不带端口号默认80，noTLS订阅生成
 let addressesnotls = [
-	"www.visa.com.sg:2087#sahar 1",
+	"www.visa.com.sg:2082#sahar 1",
 	"zula.ir:2087#sahar 2",
-	"ilovepdf.com:2096#sahar 3",
-	"zula.ir:2096#sahar 4",
-	"go.inmobi.com#sahar 5",
-	"creativecommons.org#sahar 6",
-	"discord.com:8443#sahar 7",
-	"icook.hk.org:8443#sahar 8",
-	"singapore.com:2087#sahar 9",
-	"time.is:2087#sahar 10",
-	"go.inmobi.com:2096#sahar 11",
-	"creativecommons.org:2096#sahar 12",
+	"ilovepdf.com:2052#sahar 3",
+	"zula.ir:2095#sahar 4",
+	"go.inmobi.com:80#sahar 5",
+	"creativecommons.org:80#sahar 6",
+	"discord.com:8080#sahar 7",
+	"icook.hk.org:8080#sahar 8",
+	"singapore.com:2086#sahar 9",
+	"time.is:2086#sahar 10",
+	"go.inmobi.com:8880#sahar 11",
+	"creativecommons.org:8880#sahar 12",
 ];
 
 // 设置优选noTLS地址api接口
 let addressesnotlsapi = [
-	'https://raw.githubusercontent.com/sahar-km/cmliu-WorkerVless2sub/main/addressesapi.txt', //可参考内容格式 自行搭建。
+	'https://raw.githubusercontent.com/sahar-km/cmliu-WorkerVless2sub/main/ntlsaddressesapi.txt', //可参考内容格式 自行搭建。
 ];
 
 let DLS = 8;//速度下限
@@ -73,7 +73,7 @@ let proxyhosts = [//本地代理域名池
 let proxyhostsURL = 'https://raw.githubusercontent.com/cmliu/CFcdnVmess2sub/main/proxyhosts';//在线代理域名池URL
 let EndPS = '';//节点名备注内容
 
-let FileName = 'WorkerVless2sub';
+let FileName = 'saharTOsub';
 let SUBUpdateTime = 6; 
 let total = 99;//PB
 //let timestamp = now;
