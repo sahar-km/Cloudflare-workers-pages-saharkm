@@ -621,8 +621,8 @@ export default {
 				let 最终路径 = path ;
 				let 节点备注 = EndPS ;
 				if(proxyhosts && (host.includes('.workers.dev') || host.includes('pages.dev'))) {
-					最终路径 = `/${path}`;
-					伪装域名 = `/${host}`;
+					最终路径 = `${path}`;
+					伪装域名 = `${host}`;
 					节点备注 = `${EndPS} RE`;
 					sni = 伪装域名;
 				}
