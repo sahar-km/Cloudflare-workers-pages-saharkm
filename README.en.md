@@ -1,6 +1,6 @@
 # Preferred subscription generator WorkerVless2sub
 
-### This is a VLESS node subscription content generator built through Cloudflare Workers that automatically generates preferred routes.[\[Implementation principle\]](https://www.youtube.com/watch?v=p-KhFJAC4WQ&t=70s)
+### This is a VLESS node subscription content generator built through Cloudflare Workers that automatically generates preferred lines.[\[Implementation principle\]](https://www.youtube.com/watch?v=p-KhFJAC4WQ&t=70s)
 
 Telegram communication group:[@CMLiussss](https://t.me/CMLiussss)
 
@@ -74,7 +74,7 @@ For example, the domain name of your workers project is:`sub.cmliussss.workers.d
 
 **3.1 Example of modifying addresses parameter**
 
--   Revise`addresses`Parameters add a local static preferred line. If there is no port number, the default is 443. Generating non-TLS subscriptions is not supported. The # number is followed by a remark alias, for example:
+-   Revise`addresses`Parameters add a local static preferred line. If there is no port number, the default is 443. Generating non-TLS subscriptions is not supported. The # number is followed by a comment alias, for example:
     ```js
     let addresses = [
     	'icook.tw:2053#优选域名',
