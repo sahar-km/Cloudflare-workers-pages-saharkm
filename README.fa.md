@@ -1,6 +1,6 @@
-# 优选订阅生成器 WorkerVless2sub
+# مولد اشتراک ترجیحی WorkerVless2sub
 
-### این یک تولید کننده محتوای اشتراک گره VLESS است که از طریق Cloudflare Workers ساخته شده است که به طور خودکار مسیرهای ترجیحی را ایجاد می کند.[\[اصل اجرا\]](https://www.youtube.com/watch?v=p-KhFJAC4WQ&t=70s)
+### این یک تولید کننده محتوای اشتراک گره VLESS است که از طریق Cloudflare Workers ساخته شده است که به طور خودکار خطوط ترجیحی را تولید می کند.[\[اصل اجرا\]](https://www.youtube.com/watch?v=p-KhFJAC4WQ&t=70s)
 
 گروه ارتباطی تلگرام:[@CMLiussss](https://t.me/CMLiussss)
 
@@ -9,7 +9,7 @@
 ### 1. صفحات Cloudflare را مستقر کنید:
 
 -   این پروژه را در Github فورک کنید و ستاره را کلیک کنید!!!
--   در کنسول Cloudflare Pages انتخاب کنید`连接到 Git`پس از آن، را انتخاب کنید`WorkerVless2sub`بعد از مورد کلیک کنید`开始设置`。
+-   در کنسول Cloudflare Pages انتخاب کنید`连接到 Git`پس از آن، را انتخاب کنید`WorkerVless2sub`بعد از آیتم کلیک کنید`开始设置`。
 
 ### 2. یک دامنه سفارشی را به صفحات متصل کنید:
 
@@ -29,7 +29,7 @@
 
 ### 4. مسیر دلخواه خود را اضافه کنید:
 
--   متغیرها را اضافه کنید`ADD`/`ADDNOTLS`خط ترجیحی استاتیک محلی، اگر شماره پورت وجود نداشته باشد، درگاه پیش‌فرض برای TLS 443 است / پورت پیش‌فرض برای noTLS 80 است و عدد # با نام مستعار یادآور دنبال می‌شود، برای مثال:
+-   متغیرها را اضافه کنید`ADD`/`ADDNOTLS`خط ترجیحی استاتیک محلی، اگر شماره پورت وجود نداشته باشد، درگاه پیش‌فرض برای TLS 443 است / پورت پیش‌فرض برای noTLS 80 است و شماره # با نام مستعار یادآور دنبال می‌شود، برای مثال:
         icook.tw:2053#优选域名
         cloudflare.cfgo.cc#优选官方线路
 
@@ -139,7 +139,7 @@
 
 ### 3. فایل های پیکربندی clash و singbox را مشخص کنید
 
--   اضافه کردن به`format=clash`مقدار کلید، پیکربندی اشتراک clash را دریافت کنید، به عنوان مثال:
+-   اضافه کردن به`format=clash`مقدار کلید، پیکربندی اشتراک clash را دریافت کنید، برای مثال:
     ```url
     https://sub.cmliussss.workers.dev/auto?format=clash
     https://sub.cmliussss.workers.dev/sub?format=clash&host=edgetunnel-2z2.pages.dev&uuid=30e9c5c8-ed28-4cd9-b008-dc67277f8b02&path=/?ed=2048
@@ -167,8 +167,8 @@
 | NOTLS             | نادرست                                                                                                                                                         | تغییر به`true`، هیچ قضاوتی برای نام دامنه انجام نخواهد شد و noTLS همیشه برگردانده خواهد شد.                                 |
 | TGTOKEN           | 6894123456:XXXXXXXXX0qExVsBPUhHDAbXXXXXXqWXgBA                                                                                                                 | توکن ربات برای ارسال اعلان های TG                                                                                           |
 | شما انجام می دهید | 6946912345                                                                                                                                                     | شناسه دیجیتالی حساب برای دریافت اعلان های TG                                                                                |
-| SUBAPI            | api.v1.mk                                                                                                                                                      | clash، singbox، و غیره باطن تبدیل اشتراک                                                                                    |
-| SUBCONFIG         | [https://raw.github.../ACL4SSR_Online_Full_MultiMode.ini](https://raw.githubusercontent.com/cmliu/ACL4SSR/main/Clash/config/ACL4SSR_Online_Full_MultiMode.ini) | clash، singbox، و غیره. پروفایل های تبدیل اشتراک                                                                            |
+| subapi            | api.v1.mk                                                                                                                                                      | clash، singbox، و غیره باطن تبدیل اشتراک                                                                                    |
+| SUBCONFIG         | [https://raw.github.../ACL4SSR_Online_Full_MultiMode.ini](https://raw.githubusercontent.com/cmliu/ACL4SSR/main/Clash/config/ACL4SSR_Online_Full_MultiMode.ini) | clash، singbox، و غیره. پروفایل تبدیل اشتراک                                                                                |
 | زیر نام           | WorkerVless2sub                                                                                                                                                | نام مولد اشتراک                                                                                                             |
 | PS                | 【لطفا سرعت را اندازه نگیرید】                                                                                                                                   | پیام یادداشت نام گره                                                                                                        |
 
