@@ -58,7 +58,7 @@ let ChatID ='';
 let proxyhosts = [
 	
 ];
-let proxyhostsURL = '';
+let proxyhostsURL = 'https://raw.githubusercontent.com/cmliu/CFcdnVmess2sub/main/proxyhosts';
 let EndPS = 'Mi';
 let 协议类型 = 'VLESS';
 let FileName = 'WorkerVless2sub';
@@ -414,7 +414,7 @@ export default {
 		} else if ( (userAgent.includes('sing-box') || userAgent.includes('singbox') || (format === 'singbox' && !userAgent.includes('subconverter')) ) && !userAgent.includes('cf-workers-sub')){
 			subconverterUrl = `https://${subconverter}/sub?target=singbox&url=${encodeURIComponent(request.url)}&insert=false&config=${encodeURIComponent(subconfig)}&emoji=true&list=false&tfo=false&scv=true&fdn=false&sort=false&new_name=true`;
 		} else {
-			if(host.includes('workers.dev') || host.includes('pages.dev')) {
+			if(host.includes('niworkers.dev') || host.includes('mapages.dev')) {
 				if (proxyhostsURL) {
 					try {
 						const response = await fetch(proxyhostsURL); 
@@ -591,7 +591,7 @@ export default {
 
 					return trojanLink;
 				} else {
-					const vlessLink = `vless://${uuid}@${address}:${port}?encryption=none&security=tls&sni=${sni}&fp=random&type=ws&host=${伪装域名}&path=${encodeURIComponent(最终路径)}#${encodeURIComponent(addressid + 节点备注)}`;
+					const vlessLink = `vless://${uuid}@${address}:${port}?encryption=none&security=tls&sni=${sni}&fp=randomized&type=ws&host=${伪装域名}&path=${encodeURIComponent(最终路径)}#${encodeURIComponent(addressid + 节点备注)}`;
 			
 					return vlessLink;
 				}
