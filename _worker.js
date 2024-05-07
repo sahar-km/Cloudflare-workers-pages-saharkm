@@ -56,9 +56,9 @@ let CMproxyIPs = [
 let BotToken ='';
 let ChatID =''; 
 let proxyhosts = [
-	
+     'testni.pages.dev',
 ];
-let proxyhostsURL = 'https://raw.githubusercontent.com/cmliu/CFcdnVmess2sub/main/proxyhosts';
+let proxyhostsURL = '';
 let EndPS = 'Mi';
 let 协议类型 = 'VLESS';
 let FileName = 'WorkerVless2sub';
