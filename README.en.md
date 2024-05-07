@@ -1,6 +1,6 @@
 # Preferred subscription generator WorkerVless2sub
 
-### This is a VLESS node subscription content generator built through Cloudflare Workers that automatically generates preferred routes.[\[Implementation principle\]](https://www.youtube.com/watch?v=p-KhFJAC4WQ&t=70s)
+### This is a VLESS node subscription content generator built through Cloudflare Workers that automatically generates preferred lines.[\[Implementation principle\]](https://www.youtube.com/watch?v=p-KhFJAC4WQ&t=70s)
 
 Telegram communication group:[@CMLiussss](https://t.me/CMLiussss)
 
