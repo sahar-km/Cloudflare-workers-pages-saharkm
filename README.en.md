@@ -1,6 +1,6 @@
 # Preferred subscription generator WorkerVless2sub
 
-### This is a VLESS node subscription content generator built through Cloudflare Workers that automatically generates preferred lines.[\[Implementation principle\]](https://www.youtube.com/watch?v=p-KhFJAC4WQ&t=70s)
+### This is a VLESS node subscription content generator built through Cloudflare Workers that automatically generates preferred routes.[\[Implementation principle\]](https://www.youtube.com/watch?v=p-KhFJAC4WQ&t=70s)
 
 Telegram communication group:[@CMLiussss](https://t.me/CMLiussss)
 
@@ -18,7 +18,7 @@ Telegram communication group:[@CMLiussss](https://t.me/CMLiussss)
     The domain name you are assigned is`fuck.cloudns.biz`, then add a custom field to fill in`sub.fuck.cloudns.biz`That’s it;
 -   According to Cloudflare's requirements, your domain name DNS service provider will be returned and the custom domain will be added.`sub`CNAME record of`WorkerVless2sub.pages.dev`After that, click`激活域`That’s it.
 
-### 3. Modify the quick subscription entrance and add built-in Vless node information:
+### 3. Modify the quick subscription entry and add built-in Vless node information:
 
 For example, the domain name of your pages project is:`sub.fuck.cloudns.biz`；
 
@@ -46,7 +46,7 @@ For example, the domain name of your pages project is:`sub.fuck.cloudns.biz`；
     ```js
     https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressescsv.csv
     ```
--   Add variables`DLS`,means`ADDCSV`IPs that meet the minimum speed requirements and do not meet the modified value will not be added to the preferred subscription content. Note: The unit is not considered, only the numerical value is considered. Please refer to your speed test results. For example:
+-   Add variables`DLS`,means`ADDCSV`IPs that meet the minimum speed requirements and do not meet the modified value will not be added to the preferred subscription content. Note: The unit is not considered, only the numerical value. Please refer to your speed test results. For example:
 
     ```js
     8
@@ -72,7 +72,7 @@ For example, the domain name of your workers project is:`sub.cmliussss.workers.d
 
 ### 3. Add your own preferred route:
 
-**3.1 Example of modifying addresses parameter**
+**3.1 修改 addresses 参数示例**
 
 -   Revise`addresses`Parameters add a local static preferred line. If there is no port number, the default is 443. Generating non-TLS subscriptions is not supported. The # number is followed by a comment alias, for example:
     ```js
@@ -82,7 +82,7 @@ For example, the domain name of your workers project is:`sub.cmliussss.workers.d
     	'185.221.160.203:443#电信优选IP',
     ];
     ```
-    This method only recommends adding preferred domain names. Preferred domain names that change frequently are recommended through`addressesapi`to fulfill.
+    This method only recommends adding preferred domain names, and the preferred domain names that change frequently are recommended through`addressesapi`to fulfill.
 
 **3.2 Example of modifying addressesapi parameters**
 
@@ -93,7 +93,7 @@ For example, the domain name of your workers project is:`sub.cmliussss.workers.d
     	'https://addressesapi.090227.xyz/CloudFlareYes',
     ];
     ```
-    Can be referenced[addressesapi.txt](https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressesapi.txt)Content format is built by yourself.
+    Can be referenced[addressesapi.txt](https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressesapi.txt)The content format is self-constructed.
 
 <details>
 <summary><code><strong>「 我不是小白！我有IP库！我知道IPtest是什么！我也有csv测速文件！ 」</strong></code></summary>
@@ -110,7 +110,7 @@ For example, the domain name of your workers project is:`sub.cmliussss.workers.d
     ];
     ```
 
-    `DLS`IPs that do not meet the minimum speed requirements will not be added to the preferred subscription content. Note: The unit is not considered, only the numerical value is considered. Please refer to your speed test results.
+    `DLS`IPs that do not meet the minimum speed requirements will not be added to the preferred subscription content. Note: The unit is not considered, only the numerical value. Please refer to your speed test results.
 
     </details>
 
@@ -157,10 +157,10 @@ For example, the domain name of your workers project is:`sub.cmliussss.workers.d
 | TOKEN         | auto                                                                                                                                                           | Quickly subscribe to the subscription path address of the built-in node /auto (supports multiple elements, used between elements`,`interval) |
 | HOST          | edgetunnel-2z2.pages.dev                                                                                                                                       | Quickly subscribe to the fake domain name of the built-in node                                                                               |
 | UUID          | Bahaasaa-4f0-4496-90bas-1saaaaaa4904                                                                                                                           | Quickly subscribe to the UUID of a built-in node                                                                                             |
-| PATH          | /?ed=2560                                                                                                                                                      | 快速订阅内置节点的路径信息                                                                                                                                |
+| PATH          | /?ed=2560                                                                                                                                                      | Quickly subscribe to path information of built-in nodes                                                                                      |
 | ADD           | icook.tw:2053#Official preferred domain name                                                                                                                   | correspond`addresses`Field (supports multiple elements, used between elements`,`interval)                                                    |
 | ADDAPI        | [https://raw.github.../addressesapi.txt](https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressesapi.txt)                                        | correspond`addressesapi`Field (supports multiple elements, used between elements`,`interval)                                                 |
-| ADDNOTLS      | icook.hk:8080# Official preferred domain name                                                                                                                  | 对应`addressesnotls`Field (supports multiple elements, used between elements`,`interval)                                                       |
+| ADDNOTLS      | icook.hk:8080# Official preferred domain name                                                                                                                  | correspond`addressesnotls`Field (supports multiple elements, used between elements`,`interval)                                               |
 | ADDNOTLSAPI   | [https://raw.github.../addressesapi.txt](https://raw.githubusercontent.com/cmliu/CFcdnVmess2sub/main/addressesapi.txt)                                         | correspond`addressesnotlsapi`Field (supports multiple elements, used between elements`,`interval)                                            |
 | ADDCSV        | [https://raw.github.../addressescsv.csv](https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressescsv.csv)                                        | correspond`addressescsv`Field (supports multiple elements, used between elements`,`interval)                                                 |
 | DLS           | 8                                                                                                                                                              | `addressescsv`Speed ​​measurement results meet the lower speed limit                                                                         |
