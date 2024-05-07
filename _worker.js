@@ -114,14 +114,14 @@ async function getAddressesapi(api) {
 				'Accept': 'text/html,application/xhtml+xml,application/xml;',
 				'User-Agent': 'cmliu/WorkerVless2sub'
 			},
-			signal: controller.signal // 将AbortController的信号量添加到fetch请求中，以便于需要时可以取消请求
+			signal: controller.signal
 		}).then(response => response.ok ? response.text() : Promise.reject())));
 
-		// 遍历所有响应
+		
 		for (const response of responses) {
-			// 检查响应状态是否为'fulfilled'，即请求成功完成
+			
 			if (response.status === 'fulfilled') {
-				// 获取响应的内容
+				
 				const content = await response.value;
 				newapi += content + '\n';
 			}
@@ -129,13 +129,13 @@ async function getAddressesapi(api) {
 	} catch (error) {
 		console.error(error);
 	} finally {
-		// 无论成功或失败，最后都清除设置的超时定时器
+		
 		clearTimeout(timeout);
 	}
 
 	const newAddressesapi = await ADD(newapi);
 
-	// 返回处理后的结果
+
 	return newAddressesapi;
 }
 
@@ -201,7 +201,7 @@ async function getAddressescsv(tls) {
 }
 
 async function ADD(envadd) {
-	var addtext = envadd.replace(/[	|"'\r\n]+/g, ',').replace(/,+/g, ',');	// 将空格、双引号、单引号和换行符替换为逗号
+	var addtext = envadd.replace(/[	|"'\r\n]+/g, ',').replace(/,+/g, ',');	
 	//console.log(addtext);
 	if (addtext.charAt(0) == ',') addtext = addtext.slice(1);
 	if (addtext.charAt(addtext.length -1) == ',') addtext = addtext.slice(0, addtext.length - 1);
@@ -414,7 +414,7 @@ export default {
 		} else if ( (userAgent.includes('sing-box') || userAgent.includes('singbox') || (format === 'singbox' && !userAgent.includes('subconverter')) ) && !userAgent.includes('cf-workers-sub')){
 			subconverterUrl = `https://${subconverter}/sub?target=singbox&url=${encodeURIComponent(request.url)}&insert=false&config=${encodeURIComponent(subconfig)}&emoji=true&list=false&tfo=false&scv=true&fdn=false&sort=false&new_name=true`;
 		} else {
-			if(host.includes('niworkers.dev') || host.includes('mapages.dev')) {
+			if(host.includes('workers.dev') || host.includes('pages.dev')) {
 				if (proxyhostsURL) {
 					try {
 						const response = await fetch(proxyhostsURL); 
