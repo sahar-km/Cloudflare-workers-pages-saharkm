@@ -58,8 +58,8 @@ let ChatID ='';
 let proxyhosts = [
 	
 ];
-let proxyhostsURL = 'https://raw.githubusercontent.com/cmliu/CFcdnVmess2sub/main/proxyhosts';//在线代理域名池URL
-let EndPS = 'Mi';//节点名备注内容
+let proxyhostsURL = '';
+let EndPS = 'Mi';
 let 协议类型 = 'VLESS';
 let FileName = 'WorkerVless2sub';
 let SUBUpdateTime = 6; 
@@ -98,16 +98,16 @@ async function getAddressesapi(api) {
 
 	let newapi = "";
 
-	// 创建一个AbortController对象，用于控制fetch请求的取消
+	
 	const controller = new AbortController();
 
 	const timeout = setTimeout(() => {
-		controller.abort(); // 取消所有请求
-	}, 2000); // 2秒后触发
+		controller.abort(); 
+	}, 2000); 
 
 	try {
-		// 使用Promise.allSettled等待所有API请求完成，无论成功或失败
-		// 对api数组进行遍历，对每个API地址发起fetch请求
+
+		
 		const responses = await Promise.allSettled(api.map(apiUrl => fetch(apiUrl, {
 			method: 'get', 
 			headers: {
