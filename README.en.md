@@ -72,7 +72,7 @@ For example, the domain name of your workers project is:`sub.cmliussss.workers.d
 
 ### 3. Add your own preferred route:
 
-**3.1 修改 addresses 参数示例**
+**3.1 Example of modifying addresses parameter**
 
 -   Revise`addresses`Parameters add a local static preferred line. If there is no port number, the default is 443. Generating non-TLS subscriptions is not supported. The # number is followed by a comment alias, for example:
     ```js
