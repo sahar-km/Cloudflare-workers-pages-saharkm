@@ -18,7 +18,7 @@ Telegram communication group:[@CMLiussss](https://t.me/CMLiussss)
     The domain name you are assigned is`fuck.cloudns.biz`, then add a custom field to fill in`sub.fuck.cloudns.biz`That’s it;
 -   According to Cloudflare's requirements, your domain name DNS service provider will be returned and the custom domain will be added.`sub`CNAME record of`WorkerVless2sub.pages.dev`After that, click`激活域`That’s it.
 
-### 3. Modify the quick subscription entrance and add built-in Vless node information:
+### 3. Modify the quick subscription entry and add built-in Vless node information:
 
 For example, the domain name of your pages project is:`sub.fuck.cloudns.biz`；
 
@@ -74,7 +74,7 @@ For example, the domain name of your workers project is:`sub.cmliussss.workers.d
 
 **3.1 Example of modifying addresses parameter**
 
--   Revise`addresses`Parameters add local static preferred lines. If no port number is included, the default is 443. Generating non-TLS subscriptions is not supported. The # number is followed by a comment alias, for example:
+-   Revise`addresses`Parameters add a local static preferred line. If there is no port number, the default is 443. Generating non-TLS subscriptions is not supported. The # number is followed by a comment alias, for example:
     ```js
     let addresses = [
     	'icook.tw:2053#优选域名',
@@ -168,7 +168,7 @@ For example, the domain name of your workers project is:`sub.cmliussss.workers.d
 | TGTOKEN       | 6894123456:XXXXXXXXXX0qExVsBPUhHDAbXXXXXqWXgBA                                                                                                                 | Robot token for sending TG notifications                                                                                                     |
 | YOU DO        | 6946912345                                                                                                                                                     | Account digital ID to receive TG notifications                                                                                               |
 | subapi        | api.v1.mk                                                                                                                                                      | clash, singbox, etc. subscription conversion backend                                                                                         |
-| SUBCONFIG     | [https://raw.github.../ACL4SSR_Online_Full_MultiMode.ini](https://raw.githubusercontent.com/cmliu/ACL4SSR/main/Clash/config/ACL4SSR_Online_Full_MultiMode.ini) | clash, singbox, etc. Subscription conversion profiles                                                                                        |
+| SUBCONFIG     | [https://raw.github.../ACL4SSR_Online_Full_MultiMode.ini](https://raw.githubusercontent.com/cmliu/ACL4SSR/main/Clash/config/ACL4SSR_Online_Full_MultiMode.ini) | clash, singbox, etc. Subscription conversion profile                                                                                         |
 | SUBNAME       | WorkerVless2sub                                                                                                                                                | Subscription generator name                                                                                                                  |
 | PS            | 【Please do not measure speed】                                                                                                                                  | Node name remark message                                                                                                                     |
 
